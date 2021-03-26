@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-left: 6px;
+}
+
+main {
+    width: 30%;
+}
+
+.input-container {
+    margin: 12px 0px 6px 0px;
+    display: flex;
+}
+
+.operators-container {
+    margin: 6px 0px 6px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equals-container {
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+}
+
+.input-equals {
+    width: 100%;
+}
+
+.input-number, .input-operator {
+    margin: 0px 6px;
+    width: 100%;
+}
+
+.output-container {
+    margin: 6px;
+    border: 1px solid rgb(118,118,118);
+    padding-left: 2px;
+}
+
+
