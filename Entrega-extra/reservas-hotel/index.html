@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Laboratorio Módulo 4 Extra - Reservas Hotel</title>
+  </head>
+  <body>
+    <div class="hotel-container">
+      <div class="hotel-header">
+        <h2>Reserva</h2>
+      </div>
+      <div class="hotel-body">
+        <div class="hotel-booking-container">
+          <!-- Room type -->
+          <div class="booking-input first-input">
+            <label for="room-type-selector">Tipo de habitación</label><br />
+            <select name="room-type-selector" id="room-type-selector">
+              <option value="none"></option>
+              <option value="standard">Standard</option>
+              <option value="juniorSuite">Junior Suite</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+          <!-- Spa -->
+          <div class="booking-input check-container">
+            <input
+              type="checkbox"
+              name="room-spa-check"
+              id="room-spa-check"
+              value="true"
+            />
+            <label for="room-spa-check">Incluir SPA</label>
+          </div>
+          <!-- Room size -->
+          <div class="booking-input">
+            <label for="room-size-selector">Tamaño habitación</label><br />
+            <select name="room-size-selector" id="room-size-selector">
+              <option value="none"></option>
+              <option value="single">Individual</option>
+              <option value="double">Doble</option>
+              <option value="triple">Triple</option>
+            </select>
+          </div>
+          <!-- Num of nights -->
+          <div class="booking-input">
+            <label for="room-num-nights">Número de noches</label><br />
+            <input
+              type="number"
+              id="room-num-nights"
+              name="room-num-nights"
+              min="1"
+              value="1"
+            />
+          </div>
+          <!-- Num of parking nights -->
+          <div class="booking-input">
+            <label for="room-num-parking">Número de noches de parking</label
+            ><br />
+            <input
+              type="number"
+              id="room-num-parking"
+              name="room-num-parking"
+              min="0"
+              value="0"
+            />
+          </div>
+          <!-- Submit button -->
+          <!-- <div class="booking-input button-container">
+            <button type="submit" value="submit" id="room-submit-button">
+              Calcular total estancia
+            </button>
+          </div> -->
+        </div>
+        <div class="hotel-booking-price-container">
+          <h3>Total:</h3>
+          <div class="booking-total-cost" id="booking-total-cost"></div>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
